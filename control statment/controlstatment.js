@@ -69,11 +69,65 @@
 
 
     // Q 1 :
-    let a=prompt("enter first number")
-    let b=prompt("enter second number")
-    if(a>b){
-        document.writeln("first number is maximum ",a)
-    }
-    else{
-        document.writeln("second number is maximum ",b)
-    }
+    // let a=prompt("enter first number")
+    // let b=prompt("enter second number")
+    // if(a>b){
+    //     document.writeln("first number is maximum ",a)
+    // }
+    // else{
+    //     document.writeln("second number is maximum ",b)
+    // }
+
+
+    // si=(p*t*r)/100
+
+    // let p=prompt("pri")
+    // let t=prompt("tim")
+    // let r=prompt("rate")
+    // let si=(p*t*r)/100 
+    // document.writeln("Si is ",si)
+
+
+
+    // Q 13 : 
+
+    // let a =prompt("enter a char: ")
+    // if(a>="a" || a>="A"){
+    //     document.writeln("alphabet")
+    // }
+    // else{
+    //     document.writeln("not alphabet")
+    // }
+
+
+    // Q 14 : 
+
+
+    // let a =prompt("enter a char: ")
+    // if(a>="a" || a>="A"){
+    //     document.writeln("alphabet")
+    // }
+    // else if(a>=0 || a<=0){
+    //     document.writeln("Digit")
+    // }
+    // else{
+    //     document.writeln("symbol")
+    // }
+
+
+
+    // let a =prompt("enter a char: ")
+    // if(a>="a"){
+    //     document.writeln("lowercase alphabet")
+    // }
+    // else if(a>="A"){
+    //     document.writeln("uppercase alphabet")
+    // }
+    // else{
+    //     document.writeln("not alphabet")
+    // }
+
+
+
+    
+    
