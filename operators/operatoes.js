@@ -14,8 +14,8 @@
 // 2. assigment operators : =,+=,-=,*=,/=,%= 
 
     // let a=20
-    // a%=5
-    // document.writeln(a)
+    // a+=5
+    // document.writeln(a) 
 
 
 // 3. comparision operators  : ==,<,>,<=,>=,!= (not)

@@ -225,3 +225,136 @@
 //   123
 //    1234
 //     12345
+
+
+
+
+// loops with condition : 
+
+// 1. 
+// *****      outer loop : 5 , inner loop : 5   row 1 , row 5 , column 1, column 5
+// *   *
+// *   *
+// *   * 
+// *****
+
+
+// for(i=1;i<=5;i++){
+//     for(j=1;j<=5;j++){
+//         if(i==1||i==5||j==1||j==5){
+//             document.writeln("*")
+//         }
+//         else{
+//             document.writeln("&nbsp;&nbsp;")
+//         }
+//     }
+//     document.writeln("<br/>")
+// }
+
+
+
+// Q 2 : 
+// *     row : 5 , column (1,2,3,4,5) , row 5 , column 1 , last 
+// **
+// * *
+// *  *
+// *****
+
+
+
+// for(i=1;i<=5;i++){
+//     for(j=1;j<=i;j++){
+//         if(i==5||j==1||i==j){
+//             document.writeln("*")
+//         }
+//         else{
+//             document.writeln("&nbsp;&nbsp;")
+//         }
+//     }
+//     document.writeln("<br/>")
+// }
+
+
+
+// Q 3 : 
+// *****
+// *  *
+// * *
+// **
+// *
+
+
+// for(i=5;i>=1;i--){
+//     for(j=1;j<=i;j++){
+//         if(i==5||j==1||i==j){
+//             document.writeln("*")
+//         }
+//         else{
+//             document.writeln("&nbsp;&nbsp;")
+//         }
+//     }
+//     document.writeln("<br/>")
+// }
+
+
+
+// Q 4 : 
+
+// *****      
+//  *   *
+//   *   *
+//    *   * 
+//     *****
+
+
+// Q 5 : 
+//     *****     
+//    *   *
+//   *   *
+//  *   * 
+// *****
+
+
+
+i=1
+while(i<=5){
+    k=5
+    while(k>i){
+        document.writeln("&nbsp;&nbsp;")
+        k--
+    }
+    j=1
+    while(j<=5){
+        if(i==1||i==5||j==1||j==5){
+            document.writeln("*")
+        }
+        else{
+            document.writeln("&nbsp;&nbsp;")
+        }
+        j++
+    }
+    document.writeln("<br/>")
+    i++
+}
+
+
+
+// Q 6 : 
+//     *    // 1,3,5,7,9
+//    * *
+//   *   *
+//  *     *
+// *********
+
+
+
+// Q 7 : 
+
+// *********
+//  *     *
+//   *   *
+//    * *
+//     *
+
+
+
