@@ -112,7 +112,6 @@
     // document.writeln(a)
 
 
-
 // change the element : 
     // let a=[23,56,4,545,453,40,34]
     // a[2]=98
