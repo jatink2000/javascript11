@@ -76,11 +76,59 @@
 
 // function return : the function return is used to pass the data outside the function . 
 
-    function groot(){
-        let myname="groot academy"
-        return(myname)
-    }
+    // function groot(){
+    //     let myname="groot academy" 
+    //     return(myname)
+    // }
 
     // let mynamevalue=groot()
-    document.writeln(groot())
+    // document.writeln(groot())
+
+
+
+
+
+    // types of structure of a function : 
+    // 1. no return no argument : 
+
+
+    // function groot(){
+    //     document.writeln("hello")
+    // }
+
+    // groot() 
+
+
+
+    // 2. no return with argument : 
+
+    // function groot(mydata){ // mydata parameter
+    //     document.writeln(mydata)
+    // }
+
+    // groot("hello groot") // hello argument
+
+
+
+
+    // 3. with return no argument  : 
+
+    // function groot(){
+    //     let myname="hello groot academy" // local scope
+    //     return(myname)
+    // }
+    
+    // document.writeln(groot())
+
+
+
+    // 4. with return with argument : 
+
+    function groot(myname){
+        return(myname)
+    }
+    
+    document.writeln(groot("java script"))
+
+
     
