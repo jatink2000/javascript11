@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 30%;
+    background-color: antiquewhite;
+    margin: auto;
+    padding: 20px 25px;
+   margin-top: 50px;
+   text-transform: capitalize;
+}
+/* .container .content{ */
+    /* width: 100%; */
+    /* max-width: 400px; */
+ /* }   */
+.container .head{
+    padding-bottom: 20px;
+}
+
+
+.container .content input{
+    text-transform: capitalize;
+    padding: 10px;
+    padding-right: 155px;
+    border: none;
+    border-radius: 7px;
+}
+.container .content .forget{
+    text-align: right;
+    padding: 20px 0;
+
+}
+.container .content .forget a{
+    text-decoration: none;
+}
+.container .content button{
+     padding: 10px 140px;
+    text-align: center; 
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container .content hr{
+   margin: 30px;
+   width: 70%;
+  margin-left: 40px;
+   
+}
+
+.container .content p{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.container .content .box .box1 img{
+    width: 100%;
+    max-width: 40px;
+    border-radius: 50px;
+    
+}
+.container .content .box{
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+    cursor: pointer;
+    
+   
+
+}
+
+.container .content .box i{
+    padding: 12px 15px;
+    background-color: white;
+    margin: 0 5px;
+    border-radius: 50px;
+   
+     
+}
+.footer a{
+    text-decoration: none;
+    cursor: pointer;
+}
