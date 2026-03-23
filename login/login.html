@@ -4,33 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
-    <link rel="stylesheet" href="./signup.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="../signup/signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
+
     <div class="container">
         <div class="content">
             <div class="head">
-                <h2> Signup to your account</h2>
+                <h2> Sign in to your account</h2>
             </div>
 
-            <label> First name</label> <br>
-            <input type="text" placeholder="First name" id="firstname"> <br> <br>
-            <label>Last name</label> <br>
-            <input type="text" placeholder="Last name" id="lastname"> <br> <br>
             <label> email</label> <br>
             <input type="email" placeholder="email" id="email"> <br> <br>
 
             <label> password</label> <br>
-            <input type="password" placeholder="password" id="password"> 
+            <input type="password" placeholder="password" id="password">
 
 
-            <button onclick="signup()">Sign up</button>
+            <button onclick="login()">Sign in</button>
             <hr>
 
-            <p> or signup with</p>
+            <p> or signin with</p>
 
             <div class="box">
 
@@ -43,14 +41,15 @@
 
             </div>
 
-            <!-- <p class="footer">did not have an account? <a href="#">signup</a></p> -->
+            <p class="footer">did not have an account? <a href="../signup/signup.html">signup</a></p>
 
-
-            
-            
         </div>
     </div>
-    <script src="./signup.js"></script>
+
+
+
+
+    <script src="./login.js"></script>
 </body>
 
 </html>
