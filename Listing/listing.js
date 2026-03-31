@@ -121,6 +121,8 @@ let allproducts = document.getElementById("allproducts")
 
 
 let displayproduct=(filtercatdata)=>{
+  allproducts.innerHTML=""
+
   filtercatdata.map((item) => {
 
     let box1 = document.createElement("div")
@@ -159,34 +161,31 @@ let displayproduct=(filtercatdata)=>{
 
 
 
-// show all data : 
-
-let showdata=()=>{
-  displayproduct(product) // map function
+let showproduct=()=>{
+    displayproduct(product)
 }
 
 
-showdata() 
+showproduct()
 
 
-// filter json : -------------------------
-
-let filterdata = (productcat) => {
-  allproducts.innerHTML = "";
-  let filtereddata = product.filter(data => data.category == productcat)
-
- displayproduct(filtereddata)
-
+// filter items 
+let filterdata=(productcat)=>{
+  if(productcat=="all"){
+     displayproduct(product)
+  }
+  else{
+    let filtereditem=  product.filter(data=> data.category==productcat)
+    displayproduct(filtereditem)
+  }
 }
 
 
 
-// addtocart :---------------
+
+// add to cart : 
 let addtocart=(data)=>{
-
-  let alreadycartdata= JSON.parse(localStorage.getItem("cartdata"))||[]
-
-  alreadycartdata.push(data)
-  
-  localStorage.setItem("cartdata",JSON.stringify(alreadycartdata))
+    let allcartitem=JSON.parse(localStorage.getItem("cartitem"))||[]
+    allcartitem.push(data)
+   localStorage.setItem("cartitem",JSON.stringify(allcartitem))
 }

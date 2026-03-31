@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cart page</title>
 
     <style>
         body {
-            font-family: Arial;
-            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
             margin: 0;
         }
 
         .container {
-            width: 90%;
+            width: 80%;
             margin: auto;
             padding: 20px;
         }
@@ -23,67 +23,42 @@
             text-align: center;
         }
 
-        .cart {
+        #cart-item {
             display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .cart-items {
-            flex: 2;
+            align-items: center;
             background: #fff;
-            padding: 20px;
+            padding: 15px;
+            margin: 15px 0;
             border-radius: 10px;
         }
 
-        .item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid #ddd;
-            padding: 10px 0;
+        #cart-item img {
+            width: 90px;
+            border-radius: 10px;
         }
 
-        .item img {
-            width: 80px;
-            border-radius: 8px;
-        }
-
-        .details {
+        #details {
             flex: 1;
+            margin-left: 20px;
+        }
+
+        #price {
+            font-weight: bold;
+        }
+
+
+
+        #remove {
+            color: red;
             margin-left: 15px;
-        }
-
-        .qty {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        button {
-            padding: 5px 10px;
-            border: none;
-            background: #000;
-            color: #fff;
             cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .remove {
-            background: red;
         }
 
         .summary {
-            flex: 1;
             background: #fff;
             padding: 20px;
             border-radius: 10px;
-            height: fit-content;
-        }
-
-        .summary h3 {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
+            margin-top: 20px;
         }
 
         .summary p {
@@ -94,16 +69,51 @@
         .checkout {
             width: 100%;
             padding: 10px;
-            background: green;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
             margin-top: 10px;
         }
     </style>
+
 </head>
 
 <body>
 
+    <h1> cart items</h1>
 
+
+    <div class="container" id="container">
+        <h1>🛒 Your Cart</h1>
+
+        <!-- Item 1 -->
+        <!-- <div class="cart-item">
+            <img src="https://picsum.photos/100?1">
+            <div class="details">
+                <h3>Product 1</h3>
+                <p class="price">₹500</p>
+            </div>
+
+            <p>₹500</p>
+            <span class="remove">❌</span>
+        </div> -->
+
+        
+    </div>
     
+    <!-- Summary -->
+    <div class="summary">
+        <h2>Summary</h2>
+        <p><span>Subtotal</span><span>₹1300</span></p>
+        <p><span>Delivery</span><span>Free</span></p>
+        <p><strong>Total</strong><strong>₹1300</strong></p>
+
+        <button class="checkout">Proceed to Checkout</button>
+    </div>
+
+
+
 
 
     <script src="./cart.js"></script>
