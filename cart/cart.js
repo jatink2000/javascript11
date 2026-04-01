@@ -30,6 +30,11 @@ cartdata.map((data)=>{
     let itemremove= document.createElement("span")
    itemremove.innerHTML="❌"
 
+   itemremove.addEventListener("click",()=>{
+         removeitem(data)
+   })
+
+
    itemremove.id="remove"
 
 
@@ -44,5 +49,22 @@ cartdata.map((data)=>{
 
    container.appendChild(cartitem)
 
-
 })
+
+
+// remove cart item : -----------
+let removeitem=(product)=>{
+   let newdata=cartdata.filter(data=> data.productId!=product.productId)
+   localStorage.setItem("cartitem",JSON.stringify(newdata))
+
+   window.location.reload() 
+}
+
+
+
+// totalmont : -----------------
+
+let totalamount=cartdata.reduce((total, item) => total + item.price, 0)
+document.getElementById("totalamount").innerHTML="$ "+totalamount
+document.getElementById("totalamount2").innerHTML="$ "+totalamount
+
